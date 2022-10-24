@@ -5,11 +5,11 @@ deployment:
     - /bin/cp /index.html $DEPLOYPATH
     - /bin/cp /main.css $DEPLOYPATH
     - /bin/cp /main.js $DEPLOYPATH
-    - /bin/cp -R /assets $DEPLOYPATH
-    - /bin/cp -R /components $DEPLOYPATH
-    - /bin/cp -R /pages $DEPLOYPATH
-    - /bin/cp -R /scripts $DEPLOYPATH
-    - /bin/cp -R /styles $DEPLOYPATH
+    - /bin/rsync -av assets/ $DEPLOYPATH
+    - /bin/rsync -av components/ $DEPLOYPATH
+    - /bin/rsync -av pages/ $DEPLOYPATH
+    - /bin/rsync -av scripts/ $DEPLOYPATH
+    - /bin/rsync -av styles/ $DEPLOYPATH
   
 
 
