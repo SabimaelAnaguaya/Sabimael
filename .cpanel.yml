@@ -2,5 +2,5 @@
 deployment:
   task:
     - export DEPLOYPATH=/home3/sabimael/public_html/
-    - /bin/cp -R . $DEPLOYPATH
+    - /bin/cp -R ./ $DEPLOYPATH
 
